@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Lisa Quiz</title>
 </head>
 <body>
     <header>
-        <h1>Lisa Quiz!</h1>
+        <h2>Lisa Quiz!</h2>
             <nav>
                 <a href="#high-score">Veiw High Scores</a>
             </nav>
     </header>
     <main>
+        <!--start screen-->
+        <div id="start-screen">
+            <h1>Welcome to The Lisa Quiz</h1>
+            <p>
+                This quiz to to test your knowledge of everything lisa! 
+                At the end of the quiz your will recive a score based on the amount of correct answers and speed of your answers.
+                Your Goal is to complete the score with the highest score! Have Fun! Good Luck!
+            </p>
+            <button class="btn" id="start-quiz">Start Quiz</button>
+        </div>
+        <!--questions-->
+        <div id="questions">
+            <h2 class="question-title"></h2>
+            <div class="answers"></div>
+        </div>
+        <!--end screen-->
+        <div id="end-screen">
 
+        </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
