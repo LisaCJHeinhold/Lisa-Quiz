@@ -90,4 +90,10 @@ main p {
         max-width: 100%;
         font-size: 40px;
     }
+    .question-title {
+        font-size: 28px;
+    }
+    header {
+        padding: 8px 7px;
+    }
 }
