@@ -9,10 +9,9 @@
 </head>
 <body>
     <header>
+        <!-- <div class="highscore"></div> -->
+        <div class="timer"></div>
         <h2>Lisa Quiz!</h2>
-            <nav>
-                <a href="#high-score">Veiw High Scores</a>
-            </nav>
     </header>
     <main>
         <!--start screen-->
@@ -26,13 +25,15 @@
             <button class="btn" id="start-quiz">Start Quiz</button>
         </div>
         <!--questions-->
-        <div id="questions">
+        <div id="questions" class="hide">
             <h2 class="question-title"></h2>
             <div class="answers"></div>
         </div>
         <!--end screen-->
-        <div id="end-screen">
-
+        <div id="end-screen" class="hide">
+            <h1>You Have Completed The Quiz!</h1>
+            <p class="final-score">Your Score Is... </p>
+            <p>Thanks for Playing! I hope you learned a lot about Lisa, because she is awesome!</p>
         </div>
     </main>
     <script src="./assets/script.js"></script>

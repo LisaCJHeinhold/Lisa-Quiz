@@ -1,6 +1,9 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+.hide {
+    display: none;
+}
 :root {
     --primary: #fe95c8;
     --secondary: #b5246a;
@@ -23,14 +26,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 5px solid var(--primary);
-    display: flex;
 }
-header a {
-    color: var(--white);
-    text-decoration: none;
-}
-header a:hover {
-    color: var(--primary);
+header h2 {
+    text-align: center;
 }
 main {
     padding: 10px 20px;
@@ -66,4 +64,19 @@ main p {
     font-size: 50px;
     background-color: var(--third);
     color: var(--black);
+}
+.question-title {
+    color: var(--secondary);
+    font-size: 50px;
+}
+.answers button {
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    margin: 5px 20px;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px var(--secondary);
 }
