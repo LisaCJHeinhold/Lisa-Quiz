@@ -80,3 +80,14 @@ main p {
     border-radius: 50px;
     box-shadow: 0 5px var(--secondary);
 }
+@media screen and (max-width: 700px) {
+    main p {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .btn {
+        max-width: 100%;
+        font-size: 40px;
+    }
+}

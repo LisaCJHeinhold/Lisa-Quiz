@@ -217,9 +217,7 @@ var timer = function() {
 };
 
 function restartQuiz() {
-    endScreen.setAttribute ("class", "hide");
-    document.getElementById("start-screen").removeAttribute ("class");
-    console.log("i love michael so so so so so so so so much")
+    window.location.reload();
 };
 
 //eventlisteners
