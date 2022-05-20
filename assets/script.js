@@ -97,6 +97,7 @@ var questionsScreen = document.querySelector("#questions");
 var endScreen = document.querySelector("#end-screen");
 var questionTitle = document.querySelector(".question-title");
 var optionsDivEl = document.querySelector(".answers");
+var restartBtn = document.getElementById("restart-quiz")
 //timer var
 var timerEl = document.querySelector(".timer");
 var timeLeft = myQuestions.length * 10;
@@ -215,32 +216,13 @@ var timer = function() {
     }
 };
 
-// function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
-    
-//     function showQuestions(questions, quizContainer) {
-//         //store output and answer choices
-//         var output = [];
-//         var answers;
-//         for(var i = 0; i < questions.length; i++) {
-//             //reset list
-//             answers = [];
-//             for(letter in questions[i].answers) {
-//                 answers.push(
-//                     '<label>'
-//                         + '<input type="button" name="question'+i+'" value="'+letter+'">' + letter + ': ' + questions[i].answers[letter] + 
-//                         '</label>'
-//                 );
-//             }
-//             //add questions and answers o output
-//             output.push(
-//                 '<div class="question">' + questions[i].question + '</div>' + '<div class="answers">' + answers.join('') + '</div>'
-//             );
-//         }
-//         //combine output list into string and put on page
-//         quizContainer.innerHTML = output.join('');
-//     }
-// }
+function restartQuiz() {
+    endScreen.setAttribute ("class", "hide");
+    document.getElementById("start-screen").removeAttribute ("class");
+    console.log("i love michael so so so so so so so so much")
+};
 
 //eventlisteners
 startBtn.addEventListener("click", startQuiz);
 questionsScreen.addEventListener("click", answerSelected);
+restartBtn.addEventListener("click", restartQuiz);
